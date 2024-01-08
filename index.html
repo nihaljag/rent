@@ -12,7 +12,7 @@
         const rent = parseFloat(document.getElementById("rent").value);
         const result = (dep*0.094/12) + rent;
 
-        document.getElementById("result").textContent = result;
+        document.getElementById("result").textContent = Math.round(result);
     }
 </script>
 <body>
@@ -21,7 +21,7 @@
         <label for="rent">Rent per Month:</label><br>
         <input type="number" id="rent" name="rent" value=14000><br><br>
         <button onclick="calculate()">Calculate Equivalent Rent per Month</button>
-        <p>Result: <h2><span id="result"></span></h2></p>
+        <p><h2>Result: <span id="result"></span></h2></p>
 
 </body>
 
